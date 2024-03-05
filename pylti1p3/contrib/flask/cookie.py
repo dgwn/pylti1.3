@@ -27,6 +27,7 @@ class FlaskCookieService(CookieService):
                 secure=self._request.is_secure(),
                 path="/",
                 httponly=True,
+                partitioned=True,
             )
 
             if self._request.is_secure():
